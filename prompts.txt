@@ -1,1 +1,2 @@
 Ottimizza il sito per la navigazione mobile, utilizza tutti i parametri dei recenti studi e best practice per l'ottimizzazione
+riposiziona correttamente il link Home, si è spostato in basso
