@@ -2,7 +2,11 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4f6d7a"> <!-- Colore tema per browser mobile -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <title>Irene Orlandelli Psicologa – Il sostegno che ti guida a ritrovare l'equilibrio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,6 +31,10 @@
         body {
             font-family: 'Poppins', sans-serif;
             scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
         
         h1, h2, h3, h4 {
@@ -90,7 +98,7 @@
             </div>
             
             <nav class="hidden md:flex space-x-8">
-                <a href="#hero" class="font-medium hover:text-accent transition-colors">Home</a>
+                <a href="#hero" class="font-medium hover:text-accent transition-colors" style="min-height: 44px; min-width: 44px; display: inline-flex; align-items: center;">Home</a>
                 <a href="#servizi" class="font-medium hover:text-accent transition-colors">Servizi</a>
                 <a href="#chisono" class="font-medium hover:text-accent transition-colors">Chi Sono</a>
                 <a href="#articoli" class="font-medium hover:text-accent transition-colors">Articoli</a>
@@ -98,7 +106,7 @@
             </nav>
             
             <div class="md:hidden">
-                <button id="menu-btn" class="text-primary focus:outline-none">
+                <button id="menu-btn" class="text-primary focus:outline-none" style="min-height: 44px; min-width: 44px;">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -121,7 +129,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen">
-        <img src="https://ireneorlandellipsicologa.it/wp-content/uploads/2024/12/IMG_8914.jpg" alt="Psicologa Irene Orlandelli" class="absolute inset-0 w-full h-full object-cover">
+        <img src="https://ireneorlandellipsicologa.it/wp-content/uploads/2024/12/IMG_8914.jpg" alt="Psicologa Irene Orlandelli" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
         
         <div class="absolute inset-0 hero-gradient flex items-center">
             <div class="container mx-auto px-6 max-w-4xl">
@@ -671,23 +679,35 @@
             alert('Cookie essenziali accettati, tutti gli altri rifiutati.');
         });
         
-        // Smooth scrolling for anchor links
+        // Optimized smooth scrolling with passive listeners
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
+                    requestAnimationFrame(() => {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
                     });
-                    
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
                 }
-            });
+            }, {passive: false});
         });
+
+        // Prevent zoom on double-tap (except for content inputs)
+        document.addEventListener('dblclick', function(e) {
+            if (!['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) {
+                e.preventDefault();
+            }
+        }, {passive: false});
+
+        // Fast click handling
+        document.addEventListener('touchstart', function() {}, {passive: true});
     </script>
 <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Pierpa888/studio-orlandelli" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
