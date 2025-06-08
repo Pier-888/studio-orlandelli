@@ -7,3 +7,4 @@ i contatti finali su mobile vengono tagliati sulla destra, ottimizzali
 continuano ad essere tagliati sulla destra, centralizzali
 stringi le dimensioni del form di contatti in basso
 inserisci un link referral sotto al contatto "telefono" con un link diretto a Whatsapp
+modifica in "Scrivimi su Whatsapp" e non Scrivi
