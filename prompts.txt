@@ -1,3 +1,5 @@
 Ottimizza il sito per la navigazione mobile, utilizza tutti i parametri dei recenti studi e best practice per l'ottimizzazione
 riposiziona correttamente il link Home, si è spostato in basso
 blocca lo scorrimento orizzontale su mobile
+su mobile  il primo titolo "Il sostegno che.." è troppo in alto e si sovrappone col menù, ottimizzalo
+togli la dicitura "made with deepsite"
