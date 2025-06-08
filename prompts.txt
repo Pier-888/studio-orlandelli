@@ -3,3 +3,7 @@ riposiziona correttamente il link Home, si è spostato in basso
 blocca lo scorrimento orizzontale su mobile
 su mobile  il primo titolo "Il sostegno che.." è troppo in alto e si sovrappone col menù, ottimizzalo
 togli la dicitura "made with deepsite"
+i contatti finali su mobile vengono tagliati sulla destra, ottimizzali
+continuano ad essere tagliati sulla destra, centralizzali
+stringi le dimensioni del form di contatti in basso
+inserisci un link referral sotto al contatto "telefono" con un link diretto a Whatsapp

@@ -336,6 +336,9 @@
                             <div>
                                 <h3 class="text-xl font-bold mb-1">Telefono</h3>
                                 <p class="text-lg">+39 3382733032</p>
+                                <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="mt-2 inline-flex items-center text-accent hover:text-accent-dark transition-colors">
+                                    <i class="fab fa-whatsapp mr-2 text-lg"></i> Scrivi su WhatsApp
+                                </a>
                             </div>
                         </div>
                         
@@ -353,35 +356,35 @@
                     <h3 class="text-2xl font-bold mb-6 text-primary">Contattami per una consulenza</h3>
                     <p class="mb-8">Compila il modulo per richiedere informazioni, prenotare una seduta o fissare un incontro conoscitivo.</p>
                     
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                             <div>
-                                <label for="name" class="block font-medium mb-2">Nome *</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                                <label for="name" class="block font-medium mb-1">Nome *</label>
+                                <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
                             </div>
                             <div>
-                                <label for="surname" class="block font-medium mb-2">Cognome</label>
-                                <input type="text" id="surname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                                <label for="surname" class="block font-medium mb-1">Cognome</label>
+                                <input type="text" id="surname" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
                             </div>
                         </div>
                         
                         <div>
-                            <label for="email" class="block font-medium mb-2">Email *</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                            <label for="email" class="block font-medium mb-1">Email *</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
                         </div>
                         
                         <div>
-                            <label for="phone" class="block font-medium mb-2">Telefono *</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                            <label for="phone" class="block font-medium mb-1">Telefono *</label>
+                            <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
                         </div>
                         
                         <div>
-                            <label for="message" class="block font-medium mb-2">Commento o messaggio *</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"></textarea>
+                            <label for="message" class="block font-medium mb-1">Commento o messaggio *</label>
+                            <textarea id="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"></textarea>
                         </div>
                         
-                        <div>
-                            <button type="submit" class="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center">
+                        <div class="pt-2">
+                            <button type="submit" class="bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300 flex items-center">
                                 Invia richiesta
                                 <i class="fa-solid fa-paper-plane ml-2"></i>
                             </button>
@@ -455,7 +458,7 @@
     <!-- Footer -->
     <footer class="bg-primary text-white py-12">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mx-auto max-w-[95vw]">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Irene Orlandelli Psicologa</h3>
                     <p class="mb-4 opacity-80">Il sostegno che ti guida a ritrovare l'equilibrio</p>
@@ -474,18 +477,18 @@
                 
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contatti</h3>
-                    <ul class="space-y-3 opacity-80">
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-location-dot mr-3 mt-1"></i>
-                            <span>Via Andrea Maria Ampere 81, Milano</span>
+                    <ul class="space-y-3 opacity-80 break-words">
+                        <li class="flex">
+                            <i class="fa-solid fa-location-dot mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="break-words">Via Andrea Maria Ampere 81, Milano</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-phone mr-3 mt-1"></i>
+                        <li class="flex">
+                            <i class="fa-solid fa-phone mr-3 mt-1 flex-shrink-0"></i>
                             <span>+39 3382733032</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fa-solid fa-envelope mr-3 mt-1"></i>
-                            <span>ireneorlandelli.psicologa@gmail.com</span>
+                        <li class="flex">
+                            <i class="fa-solid fa-envelope mr-3 mt-1 flex-shrink-0"></i>
+                            <span class="break-words">ireneorlandelli.psicologa@gmail.com</span>
                         </li>
                     </ul>
                 </div>
@@ -507,7 +510,7 @@
                 </div>
             </div>
             
-            <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center opacity-70 text-sm">
+            <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center opacity-70 text-sm px-4 mx-auto max-w-[95vw]">
                 <p>© 2023 Irene Orlandelli Psicologa. Tutti i diritti riservati.</p>
             </div>
         </div>
