@@ -8,3 +8,4 @@ continuano ad essere tagliati sulla destra, centralizzali
 stringi le dimensioni del form di contatti in basso
 inserisci un link referral sotto al contatto "telefono" con un link diretto a Whatsapp
 modifica in "Scrivimi su Whatsapp" e non Scrivi
+cancella il pop up con "tutti i cookie sono stati accettati" ecc
