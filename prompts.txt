@@ -1,11 +1,1 @@
-Ottimizza il sito per la navigazione mobile, utilizza tutti i parametri dei recenti studi e best practice per l'ottimizzazione
-riposiziona correttamente il link Home, si è spostato in basso
-blocca lo scorrimento orizzontale su mobile
-su mobile  il primo titolo "Il sostegno che.." è troppo in alto e si sovrappone col menù, ottimizzalo
-togli la dicitura "made with deepsite"
-i contatti finali su mobile vengono tagliati sulla destra, ottimizzali
-continuano ad essere tagliati sulla destra, centralizzali
-stringi le dimensioni del form di contatti in basso
-inserisci un link referral sotto al contatto "telefono" con un link diretto a Whatsapp
-modifica in "Scrivimi su Whatsapp" e non Scrivi
-cancella il pop up con "tutti i cookie sono stati accettati" ecc
+modifica il menù in alto eliminando i link contatti e blog e inserendo un bottone "Scrivimi su Whatsapp"  con il loghino di Whatsapp che fa redirect direttamente al numero Whatsapp
