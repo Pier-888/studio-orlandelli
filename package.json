@@ -1,0 +1,16 @@
+{
+  "name": "studio-orlandelli",
+  "version": "1.0.0",
+  "description": "Irene Orlandelli Psicologa - Professional Psychology Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build complete - static site ready'",
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["psychology", "therapy", "mental-health"],
+  "author": "Irene Orlandelli",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
