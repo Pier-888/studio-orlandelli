@@ -91,6 +91,82 @@
         .map-container {
             filter: grayscale(1) contrast(1.2) opacity(0.9);
         }
+
+        /* WhatsApp Button Styles */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .whatsapp-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #333;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                bottom: 15px;
+                right: 15px;
+                font-size: 22px;
+            }
+            
+            .whatsapp-tooltip {
+                right: 65px;
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
     </style>
 </head>
 <body class="bg-light text-dark">
@@ -102,12 +178,15 @@
                 <a href="#" class="text-xl md:text-2xl font-bold text-primary">Irene Orlandelli Psicologa</a>
             </div>
             
-            <nav class="hidden md:flex space-x-8">
+            <nav class="hidden md:flex items-center space-x-8">
                 <a href="#hero" class="font-medium hover:text-accent transition-colors">Home</a>
                 <a href="#servizi" class="font-medium hover:text-accent transition-colors">Servizi</a>
                 <a href="#chisono" class="font-medium hover:text-accent transition-colors">Chi Sono</a>
                 <a href="#articoli" class="font-medium hover:text-accent transition-colors">Articoli</a>
-                <a href="#contatti" class="font-medium hover:text-accent transition-colors">Contatti</a>
+                <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Scrivimi su WhatsApp
+                </a>
             </nav>
             
             <div class="md:hidden">
@@ -126,8 +205,10 @@
                 <a href="#servizi" class="font-medium hover:text-accent transition-colors">Servizi</a>
                 <a href="#chisono" class="font-medium hover:text-accent transition-colors">Chi Sono</a>
                 <a href="#articoli" class="font-medium hover:text-accent transition-colors">Articoli</a>
-                <a href="#contatti" class="font-medium hover:text-accent transition-colors">Contatti</a>
-                <a href="https://ireneorlandellipsicologa.it/blog/" class="font-medium hover:text-accent transition-colors">Blog</a>
+                <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-300 justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    Scrivimi su WhatsApp
+                </a>
             </div>
         </div>
     </header>
@@ -516,6 +597,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="whatsapp-float">
+        <div class="whatsapp-tooltip">Contattami su WhatsApp</div>
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Cookies Banner -->
     <div id="cookies-banner" class="cookies-banner fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 px-6 py-6 hidden">
