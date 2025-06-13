@@ -167,6 +167,26 @@
                 padding: 6px 10px;
             }
         }
+
+        /* Mobile contact section fixes */
+        @media (max-width: 768px) {
+            .contact-info-item {
+                word-break: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            .contact-grid {
+                gap: 1rem;
+            }
+            
+            .contact-form {
+                padding: 1rem;
+            }
+            
+            .contact-sidebar {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-light text-dark">
@@ -393,79 +413,79 @@
 
     <!-- Contatti Section -->
     <section id="contatti" class="py-20 bg-white">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-8 text-primary">Dove mi puoi trovare</h2>
+        <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 contact-grid">
+                <div class="w-full">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-primary text-center md:text-left">Dove mi puoi trovare</h2>
                     
-                    <div class="mb-10">
-                        <div class="flex items-start mb-6">
-                            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mr-4">
-                                <i class="fa-solid fa-location-dot text-primary"></i>
+                    <div class="mb-8 sm:mb-10 space-y-6">
+                        <div class="flex items-start contact-info-item">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-primary text-sm sm:text-base"></i>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-1">Studio Professionale</h3>
-                                <p class="text-lg">Via Andrea Maria Ampere 81, Milano</p>
-                                <p class="text-gray-600">Ricevo <strong>solo su appuntamento</strong>, in presenza o online</p>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold mb-1">Studio Professionale</h3>
+                                <p class="text-base sm:text-lg break-words">Via Andrea Maria Ampere 81, Milano</p>
+                                <p class="text-sm sm:text-base text-gray-600">Ricevo <strong>solo su appuntamento</strong>, in presenza o online</p>
                             </div>
                         </div>
                         
-                        <div class="flex items-start mb-6">
-                            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mr-4">
-                                <i class="fa-solid fa-phone text-primary"></i>
+                        <div class="flex items-start contact-info-item">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-phone text-primary text-sm sm:text-base"></i>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-1">Telefono</h3>
-                                <p class="text-lg">+39 3382733032</p>
-                                <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="mt-2 inline-flex items-center text-accent hover:text-accent-dark transition-colors">
-                                    <i class="fab fa-whatsapp mr-2 text-lg"></i> Scrivimi su Whatsapp
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold mb-1">Telefono</h3>
+                                <p class="text-base sm:text-lg break-all">+39 3382733032</p>
+                                <a href="https://wa.me/393382733032" target="_blank" rel="noopener" class="mt-2 inline-flex items-center text-accent hover:text-accent-dark transition-colors text-sm sm:text-base">
+                                    <i class="fab fa-whatsapp mr-2 text-base sm:text-lg"></i> Scrivimi su Whatsapp
                                 </a>
                             </div>
                         </div>
                         
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center mr-4">
-                                <i class="fa-solid fa-envelope text-primary"></i>
+                        <div class="flex items-start contact-info-item">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-primary text-sm sm:text-base"></i>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-bold mb-1">Email</h3>
-                                <p class="text-lg">ireneorlandelli.psicologa@gmail.com</p>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-lg sm:text-xl font-bold mb-1">Email</h3>
+                                <p class="text-base sm:text-lg break-all">ireneorlandelli.psicologa@gmail.com</p>
                             </div>
                         </div>
                     </div>
                     
-                    <h3 class="text-2xl font-bold mb-6 text-primary">Contattami per una consulenza</h3>
-                    <p class="mb-8">Compila il modulo per richiedere informazioni, prenotare una seduta o fissare un incontro conoscitivo.</p>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-primary text-center md:text-left">Contattami per una consulenza</h3>
+                    <p class="mb-6 sm:mb-8 text-center md:text-left">Compila il modulo per richiedere informazioni, prenotare una seduta o fissare un incontro conoscitivo.</p>
                     
-                    <form class="space-y-3">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <form class="space-y-3 contact-form">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <div>
-                                <label for="name" class="block font-medium mb-1">Nome *</label>
-                                <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                                <label for="name" class="block font-medium mb-1 text-sm sm:text-base">Nome *</label>
+                                <input type="text" id="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent text-sm sm:text-base">
                             </div>
                             <div>
-                                <label for="surname" class="block font-medium mb-1">Cognome</label>
-                                <input type="text" id="surname" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                                <label for="surname" class="block font-medium mb-1 text-sm sm:text-base">Cognome</label>
+                                <input type="text" id="surname" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent text-sm sm:text-base">
                             </div>
                         </div>
                         
                         <div>
-                            <label for="email" class="block font-medium mb-1">Email *</label>
-                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                            <label for="email" class="block font-medium mb-1 text-sm sm:text-base">Email *</label>
+                            <input type="email" id="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent text-sm sm:text-base">
                         </div>
                         
                         <div>
-                            <label for="phone" class="block font-medium mb-1">Telefono *</label>
-                            <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent">
+                            <label for="phone" class="block font-medium mb-1 text-sm sm:text-base">Telefono *</label>
+                            <input type="tel" id="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent text-sm sm:text-base">
                         </div>
                         
                         <div>
-                            <label for="message" class="block font-medium mb-1">Commento o messaggio *</label>
-                            <textarea id="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent"></textarea>
+                            <label for="message" class="block font-medium mb-1 text-sm sm:text-base">Commento o messaggio *</label>
+                            <textarea id="message" rows="3" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-accent text-sm sm:text-base"></textarea>
                         </div>
                         
                         <div class="pt-2">
-                            <button type="submit" class="bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300 flex items-center">
+                            <button type="submit" class="w-full sm:w-auto bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center text-sm sm:text-base">
                                 Invia richiesta
                                 <i class="fa-solid fa-paper-plane ml-2"></i>
                             </button>
@@ -473,61 +493,61 @@
                     </form>
                 </div>
                 
-                <div class="bg-secondary rounded-2xl p-8">
-                    <div class="rounded-xl overflow-hidden shadow-lg mb-8">
-                        <div class="map-container" style="height: 350px; background-color: #eee; display: flex; align-items: center; justify-content: center;">
+                <div class="bg-secondary rounded-2xl p-4 sm:p-6 lg:p-8 contact-sidebar">
+                    <div class="rounded-xl overflow-hidden shadow-lg mb-6 sm:mb-8">
+                        <div class="map-container" style="height: 250px; background-color: #eee; display: flex; align-items: center; justify-content: center;">
                             <div class="text-center p-4">
-                                <i class="fa-solid fa-map-location-dot text-4xl text-gray-500 mb-4"></i>
-                                <p class="font-medium text-gray-600">Mappa dello studio professionale</p>
-                                <p class="text-gray-500">Via Andrea Maria Ampere 81, Milano</p>
+                                <i class="fa-solid fa-map-location-dot text-3xl sm:text-4xl text-gray-500 mb-4"></i>
+                                <p class="font-medium text-gray-600 text-sm sm:text-base">Mappa dello studio professionale</p>
+                                <p class="text-gray-500 text-xs sm:text-sm break-words">Via Andrea Maria Ampere 81, Milano</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-lg">
-                        <h3 class="text-xl font-bold mb-4 text-primary">Orari di ricevimento</h3>
-                        <div class="space-y-4">
-                            <div class="flex justify-between pb-3 border-b">
+                    <div class="bg-white p-4 sm:p-6 rounded-lg mb-6 sm:mb-8">
+                        <h3 class="text-lg sm:text-xl font-bold mb-4 text-primary">Orari di ricevimento</h3>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex justify-between pb-2 sm:pb-3 border-b text-sm sm:text-base">
                                 <span>Lunedì - Venerdì</span>
                                 <span class="font-medium">09:00 - 19:00</span>
                             </div>
-                            <div class="flex justify-between pb-3 border-b">
+                            <div class="flex justify-between pb-2 sm:pb-3 border-b text-sm sm:text-base">
                                 <span>Sabato</span>
                                 <span class="font-medium">10:00 - 15:00</span>
                             </div>
-                            <div class="flex justify-between pb-3 border-b">
+                            <div class="flex justify-between pb-2 sm:pb-3 border-b text-sm sm:text-base">
                                 <span>Domenica</span>
                                 <span class="font-medium">Chiuso</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="bg-accent bg-opacity-10 p-6 rounded-lg mt-8">
-                        <h3 class="text-xl font-bold mb-4 text-primary">Modalità di incontro</h3>
-                        <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-accent bg-opacity-10 p-4 sm:p-6 rounded-lg">
+                        <h3 class="text-lg sm:text-xl font-bold mb-4 text-primary">Modalità di incontro</h3>
+                        <div class="grid grid-cols-2 gap-3 sm:gap-4">
                             <div class="flex items-center">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-3">
-                                    <i class="fa-solid fa-user text-primary"></i>
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
+                                    <i class="fa-solid fa-user text-primary text-xs sm:text-sm"></i>
                                 </div>
-                                <span>In studio</span>
+                                <span class="text-xs sm:text-sm">In studio</span>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-3">
-                                    <i class="fa-solid fa-video text-primary"></i>
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
+                                    <i class="fa-solid fa-video text-primary text-xs sm:text-sm"></i>
                                 </div>
-                                <span>Videochiamata</span>
+                                <span class="text-xs sm:text-sm">Videochiamata</span>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-3">
-                                    <i class="fa-solid fa-phone text-primary"></i>
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-primary text-xs sm:text-sm"></i>
                                 </div>
-                                <span>Telefono</span>
+                                <span class="text-xs sm:text-sm">Telefono</span>
                             </div>
                             <div class="flex items-center">
-                                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-3">
-                                    <i class="fa-solid fa-comment text-primary"></i>
+                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
+                                    <i class="fa-solid fa-comment text-primary text-xs sm:text-sm"></i>
                                 </div>
-                                <span>Chat</span>
+                                <span class="text-xs sm:text-sm">Chat</span>
                             </div>
                         </div>
                     </div>
