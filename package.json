@@ -1,7 +1,7 @@
 {
   "name": "studio-orlandelli",
   "version": "1.0.0",
-  "description": "Irene Orlandelli Psicologa - Professional Psychology Website",
+  "description": "Irene Orlandelli Psicologa - Psicologa e Psicoterapeuta a Milano",
   "main": "index.html",
   "scripts": {
     "build": "echo 'Build complete - static site ready'",
