@@ -8,7 +8,7 @@
     "start": "python3 -m http.server 3000",
     "dev": "python3 -m http.server 3000"
   },
-  "keywords": ["psychology", "therapy", "mental-health"],
+  "keywords": [["Psicologa Milano", "Psicoterapeuta a Milano", "Terapia di coppia a Milano", " Psicologa Infantile", "Psicologo per Ansia", "Psicologo per bambini", "Psicoanalista Milano", "Psicoterapeuta cognitivo comportamentale Milano"]],
   "author": "Irene Orlandelli",
   "license": "MIT",
   "devDependencies": {},
